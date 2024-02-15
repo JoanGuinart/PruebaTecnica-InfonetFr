@@ -1,0 +1,17 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+
+// Create your own map
+$custom-colors: (
+  "custom-black": #181d20,
+  "custom-green": #16a974,
+  "custom-yellow": #ffc107,
+  "custom-gray": #606568,
+  "custom-smoke": #f5f5f5
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors); 
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
